@@ -1,0 +1,119 @@
+.auth-section {
+  min-height: 100vh;
+  background: #f4f6fb;
+}
+
+.auth-wrapper {
+  max-width: 1150px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* LEFT */
+.auth-form {
+  background: #ffffff;
+}
+
+/* RIGHT */
+.auth-visual {
+  background: linear-gradient(135deg, #1b0a3d, #4b2b8f);
+  padding: 60px;
+}
+
+.start-badge {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* Buttons */
+.google-btn {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.google-btn img {
+  margin-right: 10px;
+}
+
+.primary-btn {
+  background: #1e7bff;
+  color: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background: #0d6efd;
+}
+
+/* Inputs */
+.custom-input {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.custom-input:focus {
+  box-shadow: none;
+  border-color: #1e7bff;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 45px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+/* Divider */
+.divider {
+  position: relative;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+/* Terms */
+.terms-text {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.terms-text a {
+  color: #1e7bff;
+  text-decoration: none;
+}
+
+.terms-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .auth-visual {
+    display: none;
+  }
+}

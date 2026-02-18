@@ -1,0 +1,94 @@
+.login-section {
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.login-wrapper {
+  max-width: 1100px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.left-side {
+  background: linear-gradient(135deg, #4e46dc, #6a5af9);
+  padding: 60px;
+}
+
+.right-side {
+  background: #ffffff;
+}
+
+.google-btn {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.google-btn img {
+  margin-right: 10px;
+}
+
+.divider {
+  position: relative;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.custom-input {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f3f4f6;
+}
+
+.custom-input:focus {
+  box-shadow: none;
+  border-color: #4e46dc;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 45px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.login-btn {
+  background: #1e7bff;
+  color: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.login-btn:hover {
+  background: #0d6efd;
+}
+
+.forgot-link,
+.signup-link {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.forgot-link:hover,
+.signup-link:hover {
+  text-decoration: underline;
+}
