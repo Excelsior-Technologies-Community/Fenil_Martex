@@ -9,8 +9,48 @@ body {
 }
 
 /* NAVBAR */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* BLACK toggler icon */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 991px) {
+  /* White background */
+  .navbar-collapse {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+
+  /* TEXT color BLACK */
+  .navbar-collapse .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+  }
+
+  /* Remove blue hover */
+  .navbar-collapse .nav-link:hover {
+    color: #000;
+    opacity: 0.7;
+  }
+
+  /* Button text stays white */
+  .navbar-collapse .btn {
+    color: #fff !important;
+  }
+}
 .navbar {
   overflow: visible;
+  background: transparent;
   height: 70px;
 }
 .custom-navbar {

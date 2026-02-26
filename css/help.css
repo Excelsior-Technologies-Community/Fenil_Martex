@@ -9,6 +9,7 @@ body {
 }
 
 /* NAVBAR */
+
 .navbar-toggler {
   border: none;
 }
@@ -224,133 +225,171 @@ body {
 }
 
 
-
-/* Section */
-.questions-section {
-  padding: 120px 0 100px;
-  background: #ffffff;
+/* SECTION */
+.help-section {
+  padding: 150px 20px;
+  text-align: center;
 }
 
-.questions-title {
+.help-section h1 {
   font-size: 56px;
-  font-weight: 800;
-  color: #374151;
-  margin-bottom: 28px;
+  font-weight: 700;
+  color: #2f3a4c;
+  margin-bottom: 60px;
 }
 
-.questions-subtitle {
+/* Cards wrapper */
+.help-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.help-card {
+  width: 260px;
+  height: 150px;
+  background: #f8f9fc;
+  border-radius: 20px;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #a1a1a1;
   font-size: 20px;
-  line-height: 1.8;
-  color: #6b7280;
-  max-width: 900px;
-  margin: 0 auto;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+/* Icon */
+.help-card .icon {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+/* Active card */
+.help-card.active {
+  background: #1e7bff;
+  color: #fff;
+  border-color: #1e7bff;
+  box-shadow: 0 25px 40px rgba(30, 123, 255, 0.35);
+}
+
+/* Hover */
+.help-card:hover {
+  transform: translateY(-5px);
+}
 
 
 
 
 /* Section */
-.support-form-section {
-  padding: 0px 0;
-  background: #ffffff;
+.faq-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
 }
 
-.form-label {
-  color: #1f2933;
-  font-size: 16px;
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 22px 0;
 }
 
-.custom-input {
-  background: #f7f8fa;
-  border: none;
-  border-radius: 6px;
-  padding: 14px;
-  font-size: 15px;
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
-.custom-input:focus {
-  box-shadow: none;
-  border: 1px solid #1e7bff;
-  background: #ffffff;
-}
-
-.submit-btn {
-  background: #1e7bff;
-  color: #ffffff;
-  padding: 14px 30px;
-  font-size: 16px;
+.faq-header h4 {
+  font-size: 30px;
   font-weight: 600;
-  border-radius: 6px;
+  margin: 0;
 }
 
-.submit-btn:hover {
-  background: #0d6efd;
-  color: #ffffff;
+.icon {
+  font-size: 26px;
+  font-weight: 400;
+  color: #2f3a4c;
 }
 
-.privacy-text {
-  font-size: 13px;
+.faq-body {
+  display: none;
+  padding-top: 15px;
+}
+
+.faq-body p,
+.faq-body li {
+  font-size: 15px;
   line-height: 1.7;
   color: #6b7280;
 }
 
-.privacy-text a {
-  color: #1e7bff;
-  text-decoration: none;
+/* Active */
+.faq-item.active .faq-body {
+  display: block;
 }
 
-.privacy-text a:hover {
-  text-decoration: underline;
+.faq-item.active .icon {
+  content: "−";
 }
 
 
 
 
 /* Section */
-.newsletter-section {
-  padding: 90px 0;
-  background: #ffffff;
+.faq-cta {
+  width: 100%;
+  min-height: 40vh;           
+  background: #f3f4f6;       
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
 }
 
-.newsletter-title {
-  font-size: 44px;
-  font-weight: 800;
-  color: #374151;
-  line-height: 1.2;
+/* Text section */
+.faq-cta .content {
+  padding-left: 80px;
 }
 
-/* Form */
-.newsletter-form {
-  gap: 16px;
+.faq-cta h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2f3a4c;
+  margin-bottom: 20px;
 }
 
-.newsletter-input {
-  padding: 16px 18px;
-  font-size: 17px;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
+.faq-cta p {
+  font-size: 20px;
+  color: #6b7280;
+  max-width: 420px;
+  margin-bottom: 30px;
 }
 
-.newsletter-input:focus {
-  box-shadow: none;
-  border-color: #1e7bff;
-}
-
-.newsletter-btn {
-  padding: 16px 28px;
-  font-size: 17px;
-  font-weight: 600;
-  border-radius: 8px;
+/* Button */
+.faq-cta .btn-primary {
   background: #1e7bff;
-  color: #ffffff;
-  white-space: nowrap;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 6px;
 }
 
-.newsletter-btn:hover {
-  background: #0d6efd;
-  color: #ffffff;
+/* Image section */
+.image-wrap {
+  text-align: center;
 }
+
+.image-wrap img {
+  max-width: 90%;
+  height: auto;
+}
+
+
 
 
 /* FOOTER */
@@ -456,181 +495,16 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .testimonial-title {
-    font-size: 36px;
-  }
-
-  .testimonial-subtitle {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 768px) {
-  .newsletter-title {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  .newsletter-form {
-    flex-direction: column;
-  }
-
-  .newsletter-btn {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .questions-title {
-    font-size: 36px;
-  }
-
-  .questions-subtitle {
-    font-size: 17px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .job-section-title {
-    font-size: 22px;
-  }
-
-  .job-apply-section p,
-  .job-steps li {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-links a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .content-text {
-    font-size: 16px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .job-list-title {
-    font-size: 20px;
-  }
-
-  .job-list li {
-    font-size: 15px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .job-section-title {
-    font-size: 24px;
-  }
-
-  .job-content-section p {
-    font-size: 16px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .contact-title {
-    font-size: 36px;
-  }
-
-  .contact-btn {
-    font-size: 18px;
-    padding: 14px 28px;
-  }
-}
-
-@media (max-width: 768px) {
-  .benefits-box {
-    padding: 40px 24px;
-  }
-
-  .benefit-title {
-    font-size: 20px;
-  }
-
-  .benefit-text {
-    font-size: 16px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .job-title {
-    font-size: 36px;
-  }
-
-  .job-location {
-    font-size: 18px;
-  }
-}
-
-
-@media (max-width: 992px) {
-  .career-box {
-    padding: 60px 20px;
-    text-align: center;
-  }
-
-  .career-text {
-    margin: 0 auto 20px;
-  }
-
-  .career-img {
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .roles-title {
-    font-size: 36px;
-  }
-
-  .roles-subtitle {
-    font-size: 17px;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .cta-title {
-    font-size: 34px;
-  }
-  .cta-box {
-    padding: 60px 20px;
-  }
-}
-
-
-@media (max-width: 991px) {
-  .subscribe-title {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .subscribe-form {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .subscribe-form input,
-  .subscribe-form button {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
 @media (max-width: 992px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
@@ -642,7 +516,104 @@ body {
   }
 }
 
-/* RESPONSIVE */
+@media (max-width: 991px) {
+  .faq-cta {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+
+  .faq-cta .content {
+    padding-left: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .faq-cta p {
+    margin: 0 auto 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .help-section h1 {
+    font-size: 40px;
+  }
+
+  .help-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .summary-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 30px;
+  }
+
+  .cta-subtitle {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .section-text,
+  .solution-list li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-thumb {
+    height: 260px;
+  }
+
+  .play-btn {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .product-mockup-section {
+    padding: 60px 0;
+  }
+
+  .mockup-wrapper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-box {
+    height: auto;
+  }
+
+  .img-large {
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 36px;
+  }
+}
+
 @media (max-width: 991px) {
   .cta-box {
     padding: 70px 30px;

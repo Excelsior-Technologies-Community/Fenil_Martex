@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Customers</title>
+  <title>Error Pages</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../css/customer.css">
+  <link rel="stylesheet" href="../css/error.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 
       <!-- LOGO -->
       <img src="../img/logo3-1.png" alt="Martex Logo" class="navbar-logo">
-      <a class="navbar-brand fw-bold" href="main.html">MARTEX</a>
+      <a class="navbar-brand fw-bold" style="color: rgb(87, 86, 86);" href="main.html">MARTEX</a>
 
       <!-- TOGGLER -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -48,6 +48,7 @@
           <li class="nav-item"><a class="nav-link" href="case_studies.html">Case Studies</a></li>
           <li class="nav-item"><a class="nav-link" href="price.html">Pricing</a></li>
           <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link" href="sign.html">Sign In</a></li>
 
           <li class="nav-item ms-lg-3">
             <a class="btn btn-pink" href="gets.html">Get Started</a>
@@ -59,148 +60,29 @@
   </nav>
 
 
-    <section class="testimonial-header">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="testimonial-title">
-                    Here’s what our amazing <br>
-                    clients are saying
-                    </h2>
-                    <p class="testimonial-subtitle">
-                    Read what customers think about us
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+
+  <section class="error-page">
+    <div class="error-content">
+
+      <div class="error-number">
+        <span>4</span>
+        <span class="zero">O</span>
+        <span>4</span>
+      </div>
+      
+      <h1>Page Not Found</h1>
+      <p>
+        Oops! The page you are looking for might have been moved,
+        renamed or might never existed
+      </p>
+
+      <a href="/" class="btn">Back to home</a>
+
+    </div>
+  </section>
 
 
 
-    <section class="testimonials-section">
-        <div class="container">
-
-            <div class="row g-4">
-
-            <!-- Card 1 -->
-            <div class="col-lg-6">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        “Querat sodales sapien euismod blandit aliquet ipsum primis
-                        undo and cubilia laoreet augue and luctus magna dolor”
-                    </p>
-
-                    <div class="testimonial-user">
-                        <img src="https://i.pravatar.cc/80?img=12" alt="">
-                        <div>
-                        <h6>Scott Boxer</h6>
-                        <span>@scott_boxer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-lg-6">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        “At sagittis congue augue and magna ipsum vitae a purus
-                        ipsum primis diam a cubilia laoreet”
-                    </p>
-
-                    <div class="testimonial-user">
-                        <img src="https://i.pravatar.cc/80?img=32" alt="">
-                        <div>
-                        <h6>Joel Peterson</h6>
-                        <span>Internet Surfer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-lg-6">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        “An augue cubilia laoreet magna suscipit egestas and ipsum
-                        a lectus purus ipsum primis”
-                    </p>
-
-                    <div class="testimonial-user">
-                        <img src="https://i.pravatar.cc/80?img=45" alt="">
-                        <div>
-                        <h6>Jennifer Harper</h6>
-                        <span>App Developer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-lg-6">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        “Augue a vitae purus tempus egestas volutpat augue undo
-                        cubilia laoreet magna”
-                    </p>
-
-                    <div class="testimonial-user">
-                        <img src="https://i.pravatar.cc/80?img=22" alt="">
-                        <div>
-                        <h6>Evelyn Martinez</h6>
-                        <span>WordPress Consultant</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            </div>
-
-            <!-- Pagination -->
-            <div class="testimonial-pagination">
-                <span>&lsaquo;</span>
-                <span class="active">1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>&rsaquo;</span>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-    <section class="subscribe-section">
-        <div class="container">
-            <div class="row align-items-center">
-
-            <!-- LEFT TEXT -->
-            <div class="col-lg-6">
-                <h2 class="subscribe-title">
-                Stay up to date with our <br>
-                news, ideas and updates
-                </h2>
-            </div>
-
-            <!-- RIGHT FORM -->
-            <div class="col-lg-6">
-                <form class="subscribe-form">
-                <input type="email" placeholder="Your email address" required>
-                <button type="submit">Subscribe Now</button>
-                </form>
-            </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-  
   
 
 
@@ -312,6 +194,25 @@
 
     animateUpSections.forEach(section => observerUp.observe(section));
   </script>
+
+
+    <script>
+        document.querySelectorAll(".faq-header").forEach(header => {
+            header.addEventListener("click", () => {
+            const item = header.parentElement;
+            const icon = header.querySelector(".icon");
+
+            document.querySelectorAll(".faq-item").forEach(faq => {
+                faq.classList.remove("active");
+                faq.querySelector(".icon").textContent = "+";
+            });
+
+            item.classList.add("active");
+            icon.textContent = "−";
+            });
+        });
+    </script>
+
 
 
 

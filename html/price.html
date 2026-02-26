@@ -1,520 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Pricing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/price.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/price.css">
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg martex-navbar">
-        <div class="container">
 
-            <!-- LOGO -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="../img/logo2.png" alt="Martex" class="nav-logo">
-            <span class="brand-text">MARTEX</span>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+
+      <!-- LOGO -->
+      <img src="../img/logo3-1.png" alt="Martex Logo" class="navbar-logo">
+      <a class="navbar-brand fw-bold" style="color: rgb(87, 86, 86);" href="main.html">MARTEX</a>
+
+      <!-- TOGGLER -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- MENU -->
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav align-items-lg-center">
+
+          <!-- ABOUT DROPDOWN -->
+          <li class="nav-item dropdown about-dropdown-wrap">
+            <a class="nav-link dropdown-toggle" href="#">
+              Comapny <span style="font-size: 10px;">▼</span>
             </a>
 
-            <!-- TOGGLER -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- MENU -->
-            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-            <ul class="navbar-nav align-items-lg-center gap-lg-4">
-
-                <!-- DROPDOWN -->
-                <li class="nav-item dropdown company-dropdown-wrap">
-                    <a class="nav-link dropdown-toggle" href="#">
-                        Company
-                    </a>
-
-                    <ul class="dropdown-menu company-dropdown">
-                        <li>
-                        <a class="dropdown-item" href="about_us.html">About Us</a>
-                        </li>
-
-                        <li>
-                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="careers.html">
-                            Careers
-                            <span class="badge-count">4</span>
-                        </a>
-                        </li>
-
-                        <li>
-                        <a class="dropdown-item" href="customer.html">Customers</a>
-                        </li>
-
-                        <li>
-                        <a class="dropdown-item" href="blog.html">Our Blog</a>
-                        </li>
-
-                        <li>
-                        <a class="dropdown-item" href="contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </li>
-
-
-                <li class="nav-item">
-                <a class="nav-link" href="case_studies.html">Case Studies</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="price.html">Pricing</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQs</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="sign.html">Sign In</a>
-                </li>
-
-                <!-- BUTTON -->
-                <li class="nav-item ms-lg-3">
-                <a href="gets.html" class="btn btn-primary nav-btn">Get Started</a>
-                </li>
-
+            <ul class="dropdown-menu about-dropdown">
+              <li><a class="dropdown-item" href="about_us.html">About</a></li>
+              <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+              <li><a class="dropdown-item" href="price.html">Pricing</a></li>
+              <li><a class="dropdown-item" href="blog.html">Our Blog</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
             </ul>
-            </div>
-        </div>
-    </nav>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="case_studies.html">Case Studies</a></li>
+          <li class="nav-item"><a class="nav-link" href="price.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link" href="sign.html">Sign In</a></li>
+
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-pink" href="gets.html">Get Started</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
+  <section class="pricing-section">
+      <div class="container text-center">
 
-    <section class="pricing-header">
-        <h1 class="pricing-title">Simple, Flexible Pricing</h1>
+        <!-- Title -->
+        <h2 class="pricing-title">Simple, Flexible Pricing</h2>
 
+        <!-- Toggle -->
         <div class="billing-toggle">
-            <span class="billing-text">Billed monthly</span>
-
-            <label class="switch">
+          <span>Billed monthly</span>
+          <label class="switch">
             <input type="checkbox">
             <span class="slider"></span>
-            </label>
-
-            <span class="billing-text">Billed yearly</span>
+          </label>
+          <span>Billed yearly</span>
         </div>
 
-        <p class="billing-save">Save up to 35% with yearly billing</p>
-    </section>
+        <p class="save-text">Save up to 35% with yearly billing</p>
 
+        <!-- Pricing Cards -->
+        <div class="row mt-5">
 
+          <!-- Starter -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="pricing-card">
+              <h4>Starter</h4>
+              <h2 class="price">$0 <span>/ forever</span></h2>
+              <p class="desc">For professionals getting started with smaller projects.</p>
 
-    <section class="pricing-cards animate-up">
+              <button class="btn-primary-custom">Get started - It's free</button>
 
-        <div class="pricing-grid">
-
-            <!-- Starter -->
-            <div class="price-card">
-            <h4 class="plan-name">Starter</h4>
-            <h2 class="plan-price">$0 <span>/ forever</span></h2>
-            <p class="plan-desc">
-                For professionals getting started with smaller projects.
-            </p>
-
-            <a href="#" class="plan-btn">Get started – it's free</a>
-
-            <ul class="plan-features">
-                <li>2 free projects</li>
-                <li>1 GB of cloud storage</li>
-                <li>For personal use</li>
-                <li>Weekly data backup</li>
-                <li>No Ads. No trackers</li>
-                <li>12/5 email support</li>
-            </ul>
+              <ul>
+                <li>No credit card required</li>
+                <li>✔ 2 free projects</li>
+                <li>✔ 1 GB of cloud storage</li>
+                <li>✔ For personal use</li>
+                <li class="muted">✔ Weekly data backup</li>
+                <li class="muted">✔ No Ads. No trackers</li>
+                <li>✔ 12/5 email support</li>
+              </ul>
             </div>
+          </div>
 
-            <!-- Basic -->
-            <div class="price-card">
-            <h4 class="plan-name">Basic</h4>
-            <h2 class="plan-price">$16.99 <span>/ mo</span></h2>
-            <p class="plan-desc">
-                For personal use or small teams with simple workflows.
-            </p>
+          <!-- Basic -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="pricing-card">
+              <h4>Basic</h4>
+              <h2 class="price">$16.99 <span>/ mo</span></h2>
+              <p class="desc">For personal use or small teams with simple workflows.</p>
 
-            <a href="#" class="plan-btn">Start 14-day trial</a>
-            <p class="plan-note">7-Day Money Back Guarantee</p>
+              <button class="btn-primary-custom">Start 14-day trial</button>
 
-            <ul class="plan-features">
-                <li>Up to 250 projects</li>
-                <li>15 GB of Cloud Storage</li>
-                <li>Shared team workspace</li>
-                <li>Daily data backup</li>
-                <li>No Ads. No trackers</li>
-                <li>12/7 email support</li>
-            </ul>
+              <ul>
+                <li>7-Day Money Back Guarantee</li>
+                <li>✔ Up to 250 projects</li>
+                <li>✔ 15 GB of Cloud Storage</li>
+                <li>✔ Shared team workspace</li>
+                <li>✔ Daily data backup</li>
+                <li>✔ No Ads. No trackers</li>
+                <li>✔ 12/7 email support</li>
+              </ul>
             </div>
+          </div>
 
-            <!-- Advanced -->
-            <div class="price-card">
-            <h4 class="plan-name">Advanced</h4>
-            <h2 class="plan-price">$24.99 <span>/ mo</span></h2>
-            <p class="plan-desc">
-                For growing teams that need more services and flexibility.
-            </p>
+          <!-- Advanced -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="pricing-card">
+              <h4>Advanced</h4>
+              <h2 class="price">$24.99 <span>/ mo</span></h2>
+              <p class="desc">For growing teams that need more services and flexibility.</p>
 
-            <a href="#" class="plan-btn">Upgrade your plan</a>
-            <p class="plan-note">7-Day Money Back Guarantee</p>
+              <button class="btn-primary-custom">Upgrade your plan</button>
 
-            <ul class="plan-features">
-                <li>Everything in Basic</li>
-                <li>Private cloud hosting</li>
-                <li>Custom security</li>
-                <li>Advanced user permissions</li>
-                <li>Multi-team management</li>
-                <li>24/7 Email Support</li>
-            </ul>
+              <ul>
+                <li>7-Day Money Back Guarantee</li>
+                <li>✔ Everything in Basic</li>
+                <li>✔ Private cloud hosting</li>
+                <li>✔ Custom security</li>
+                <li>✔ Advanced user permissions</li>
+                <li>✔ Multi-team management</li>
+                <li>✔ 24/7 Email Support</li>
+              </ul>
             </div>
+          </div>
 
         </div>
-    </section>
+      </div>
+  </section>
 
 
-    <section class="logo-section">
-        <div class="container">
-        <p class="logo-title">
-            Trusted and used by over 3,400 companies
-        </p>
-        </div>
+  <section class="logo-section">
+    <div class="container">
+      <p class="logo-title">
+        Martex is loved and trusted by thousands:
+      </p>
+    </div>
 
-        <!-- MARQUEE -->
-        <div class="logo-marquee">
-        <div class="logo-track">
+    <!-- MARQUEE -->
+    <div class="logo-marquee">
+      <div class="logo-track">
 
-            <!-- LOGOS (repeat twice for smooth loop) -->
-            <a href="#"><img src="../img/home.png" alt="home"></a>
-            <a href="#"><img src="../img/bd.png" alt="bd"></a>
-            <a href="#"><img src="../img/i.png" alt="i"></a>
-            <a href="#"><img src="../img/spark.png" alt="spark"></a>
-            <a href="#"><img src="../img/mountain.png" alt="maountain"></a>
-            <a href="#"><img src="../img/l.png" alt="l"></a>
-            <a href="#"><img src="../img/p.png" alt="p"></a>
-            <a href="#"><img src="../img/f.png" alt="f"></a>
+        <!-- LOGOS (repeat twice for smooth loop) -->
+        <a href="#"><img src="../img/home.png" alt="home"></a>
+        <a href="#"><img src="../img/bd.png" alt="bd"></a>
+        <a href="#"><img src="../img/i.png" alt="i"></a>
+        <a href="#"><img src="../img/spark.png" alt="spark"></a>
+        <a href="#"><img src="../img/mountain.png" alt="maountain"></a>
+        <a href="#"><img src="../img/l.png" alt="l"></a>
+        <a href="#"><img src="../img/p.png" alt="p"></a>
+        <a href="#"><img src="../img/f.png" alt="f"></a>
 
-            <!-- duplicate -->
-            <a href="#"><img src="../img/home.png" alt="home"></a>
-            <a href="#"><img src="../img/bd.png" alt="bd"></a>
-            <a href="#"><img src="../img/i.png" alt="i"></a>
-            <a href="#"><img src="../img/spark.png" alt="spark"></a>
-            <a href="#"><img src="../img/mountain.png" alt="maountain"></a>
-            <a href="#"><img src="../img/l.png" alt="l"></a>
-            <a href="#"><img src="../img/p.png" alt="p"></a>
-            <a href="#"><img src="../img/f.png" alt="f"></a>
+        <!-- duplicate -->
+        <a href="#"><img src="../img/home.png" alt="home"></a>
+        <a href="#"><img src="../img/bd.png" alt="bd"></a>
+        <a href="#"><img src="../img/i.png" alt="i"></a>
+        <a href="#"><img src="../img/spark.png" alt="spark"></a>
+        <a href="#"><img src="../img/mountain.png" alt="maountain"></a>
+        <a href="#"><img src="../img/l.png" alt="l"></a>
+        <a href="#"><img src="../img/p.png" alt="p"></a>
+        <a href="#"><img src="../img/f.png" alt="f"></a>
 
-        </div>
-        </div>
-        <hr>
-    </section>
+      </div>
+    </div>
+    <hr>
+  </section>
 
 
-    <section class="compare-header">
-        <h1 class="compare-title">Compare Our Plans</h1>
+  <section class="compare-section">
+    <div class="container">
+
+      <!-- Title -->
+      <div class="text-center mb-5">
+        <h2 class="compare-title">Compare Our Plans</h2>
         <p class="compare-subtitle">
-            Complete list of features available in our pricing plans
+          Complete list of features available in our pricing plans
         </p>
-    </section>
+      </div>
 
+      <!-- Comparison Table -->
+      <div class="table-responsive">
+        <table class="table compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Starter</th>
+              <th>Basic</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Available Projects</td>
+              <td>Up to 2</td>
+              <td>Up to 250</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Available Storage</td>
+              <td>2Gb</td>
+              <td>50Gb</td>
+              <td>350Gb</td>
+            </tr>
+            <tr>
+              <td>Private Cloud Hosting</td>
+              <td class="cross">✕</td>
+              <td class="cross">✕</td>
+              <td class="check">✔</td>
+            </tr>
+            <tr>
+              <td>User Permissions</td>
+              <td class="check">✔</td>
+              <td class="check">✔</td>
+              <td class="check">✔</td>
+            </tr>
+            <tr>
+              <td>Direct Integrations</td>
+              <td class="check">✔</td>
+              <td class="check">✔</td>
+              <td class="check">✔</td>
+            </tr>
+            <tr>
+              <td>Reusable Components</td>
+              <td class="cross">✕</td>
+              <td class="check">✔</td>
+              <td class="check">✔</td>
+            </tr>
+            <tr>
+              <td>Data Backup</td>
+              <td>Weekly</td>
+              <td>Daily</td>
+              <td>Daily</td>
+            </tr>
+            <tr>
+              <td>No Ads. No Trackers</td>
+              <td class="cross">✕</td>
+              <td class="check">✔</td>
+              <td class="check">✔</td>
+            </tr>
+            <tr>
+              <td>Advanced Security</td>
+              <td class="cross">✕</td>
+              <td class="check">✔</td>
+              <td class="check">✔</td>
+            </tr>
+            <tr>
+              <td>Shared Team Workspace</td>
+              <td class="cross">✕</td>
+              <td class="check">✔</td>
+              <td class="check">✔</td>
+            </tr>
+            <tr>
+              <td>Team Management</td>
+              <td class="cross">✕</td>
+              <td class="cross">✕</td>
+              <td class="check">✔</td>
+            </tr>
+            <tr>
+              <td>Customer Support</td>
+              <td>Limited</td>
+              <td>Basic</td>
+              <td>Priority</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <section class="compare-table-section animate-up">
-
-        <div class="compare-table-wrapper">
-            <table class="compare-table">
-            <thead>
-                <tr>
-                <th></th>
-                <th>Starter</th>
-                <th>Basic</th>
-                <th>Premium</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                <td>Available Projects</td>
-                <td>Up to 2</td>
-                <td>Up to 250</td>
-                <td>Unlimited</td>
-                </tr>
-                <tr>
-                <td>Available Storage</td>
-                <td>2Gb</td>
-                <td>50Gb</td>
-                <td>350Gb</td>
-                </tr>
-                <tr>
-                <td>Private Cloud Hosting</td>
-                <td class="no">✕</td>
-                <td class="no">✕</td>
-                <td class="yes">✓</td>
-                </tr>
-                <tr>
-                <td>User Permissions</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                </tr>
-                <tr>
-                <td>Direct Integrations</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                </tr>
-                <tr>
-                <td>Reusable Components</td>
-                <td class="no">✕</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                </tr>
-                <tr>
-                <td>Data Backup</td>
-                <td>Weekly</td>
-                <td>Daily</td>
-                <td>Daily</td>
-                </tr>
-                <tr>
-                <td>No Ads. No Trackers</td>
-                <td class="no">✕</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                </tr>
-                <tr>
-                <td>Advanced Security</td>
-                <td class="no">✕</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                </tr>
-                <tr>
-                <td>Shared Team Workspace</td>
-                <td class="no">✕</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                </tr>
-                <tr>
-                <td>Team Management</td>
-                <td class="no">✕</td>
-                <td class="no">✕</td>
-                <td class="yes">✓</td>
-                </tr>
-                <tr>
-                <td>Customer Support</td>
-                <td>Limited</td>
-                <td>Basic</td>
-                <td>Priority</td>
-                </tr>
-            </tbody>
-            </table>
+      <!-- Bottom Info -->
+      <div class="row bottom-info mt-5">
+        <div class="col-lg-4">
+          <h6>Accepted Payment Methods</h6>
+          <div class="payment-icons">
+            <span>VISA</span>
+            <span>AMEX</span>
+            <span>DISC</span>
+            <span>PayPal</span>
+            <span>Shopify</span>
+          </div>
         </div>
 
-        <!-- Bottom Info -->
-        <div class="compare-footer">
-            <div class="footer-item">
-            <h4>Accepted Payment Methods</h4>
-            <p>Visa, Mastercard, PayPal, Stripe, Shopify</p>
-            </div>
-
-            <div class="footer-item">
-            <h4>Money Back Guarantee</h4>
-            <p>Explore Martex Premium for 14 days. If it’s not a perfect fit, receive a full refund.</p>
-            </div>
-
-            <div class="footer-item">
-            <h4>SSL Encrypted Payment</h4>
-            <p>Your information is protected by 256-bit SSL encryption.</p>
-            </div>
+        <div class="col-lg-4">
+          <h6>Money Back Guarantee</h6>
+          <p>Explore Martex Premium for 14 days. If it's not a perfect fit, receive a full refund.</p>
         </div>
 
-    </section>
-
-
-    <section class="faq-section">
-        <div class="faq-header">
-            <h2>Questions & Answers</h2>
-            <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
+        <div class="col-lg-4">
+          <h6>SSL Encrypted Payment</h6>
+          <p>Your information is protected by 256-bit SSL encryption.</p>
         </div>
+      </div>
 
-        <div class="faq-grid animate-up">
-
-            <!-- LEFT COLUMN -->
-            <div class="faq-col">
-            <div class="faq-item">
-                <h4>1. Getting started with Martex</h4>
-                <p>
-                Etiam amet mauris suscipit in odio integer congue metus and vitae
-                arcu mollis blandit ultrice ligula egestas magna suscipit lectus
-                magna suscipit luctus blandit and laoreet
-                </p>
-            </div>
-
-            <div class="faq-item">
-                <h4>2. How do I choose a plan?</h4>
-                <p>
-                An enim nullam tempor sapien gravida donec ipsum and enim porta
-                justo integer at velna vitae auctor integer congue undo magna
-                laoreet augue pretium purus pretium ligula
-                </p>
-            </div>
-
-            <div class="faq-item">
-                <h4>3. Do I need a credit card to sign up?</h4>
-                <ul>
-                <li>Fringilla risus, luctus mauris orci auctor purus ligula</li>
-                <li>Nemo ipsam egestas volute undo turpis purus lipsum primis</li>
-                </ul>
-            </div>
-            </div>
-
-            <!-- RIGHT COLUMN -->
-            <div class="faq-col">
-            <div class="faq-item">
-                <h4>4. Discounts for annual plans</h4>
-                <p>
-                Quaerat sodales sapien euismod blandit purus a purus ipsum primis
-                in cubilia laoreet augue luctus dolor luctus
-                </p>
-                <p>
-                An enim nullam tempor sapien gravida donec congue metus. Vitae
-                arcu mollis blandit integer nemo volute velna
-                </p>
-            </div>
-
-            <div class="faq-item">
-                <h4>5. How to request a refund?</h4>
-                <p>
-                Cubilia laoreet augue egestas and luctus donec curabite diam vitae
-                dapibus libero and quisque gravida donec neque blandit justo
-                aliquam molestie nunc sapien justo
-                </p>
-            </div>
-
-            <div class="faq-item">
-                <h4>6. Can I cancel at anytime?</h4>
-                <p>
-                An enim nullam tempor sapien gravida donec ipsum and enim porta
-                justo integer at velna vitae auctor integer congue undo magna
-                laoreet augue pretium purus pretium ligula
-                </p>
-            </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="cta-free">
-        <h2>Give it a try, it's free!</h2>
-        <p class="cta-subtitle">It only takes a few clicks to get started</p>
-
-        <a href="#" class="cta-btn">Get started – it's free</a>
-
-        <div class="cta-note">
-            ✓ Free for 14 days, no credit card required.
-        </div>
-    </section>
+    </div>
+  </section>
 
 
 
+  <section class="faq-section">
+    <div class="container">
 
-    <footer class="footer-section">
+      <!-- Title -->
+      <div class="text-center mb-5">
+        <h2 class="faq-title">Questions & Answers</h2>
+        <p class="faq-subtitle">
+          Ligula risus auctor tempus magna feugiat lacinia.
+        </p>
+      </div>
 
-        <div class="footer-top">
+      <div class="row">
 
-            <!-- Logo -->
-            <div class="footer-brand">
-            <div class="brand-logo">MARTEX</div>
-            </div>
+        <!-- LEFT COLUMN -->
+        <div class="col-lg-6">
 
-            <!-- Company -->
-            <div class="footer-col">
-            <h4>Company</h4>
+          <div class="faq-item">
+            <h5>1. Getting started with Martex</h5>
+            <p>
+              Etiam amet mauris suscipit in odio integer congue metus and vitae
+              arcu mollis blandit ultrice ligula egestas magna suscipit lectus magna
+              suscipit luctus blandit and laoreet
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h5>2. How do I choose a plan?</h5>
+            <p>
+              An enim nullam tempor sapien gravida donec ipsum and enim porta
+              justo integer at velna vitae auctor integer congue undo magna laoreet
+              augue pretium purus pretium ligula
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h5>3. Do I need a credit card to sign up?</h5>
             <ul>
+              <li>Fringilla risus, luctus mauris orci auctor purus ligula euismod pretium</li>
+              <li>Nemo ipsam egestas volute undo turpis purus lipsum primis aliquam</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col-lg-6">
+
+          <div class="faq-item">
+            <h5>4. Discounts for annual plans</h5>
+            <p>
+              Quaerat sodales sapien euismod blandit purus a purus ipsum primis in
+              cubilia laoreet augue luctus dolor luctus
+            </p>
+            <p>
+              An enim nullam tempor sapien gravida donec congue metus. Vitae arcu
+              mollis blandit integer nemo volute velna
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h5>5. How to request a refund?</h5>
+            <p>
+              Cubilia laoreet augue egestas and luctus donec curabite diam vitae
+              dapibus libero and quisque gravida donec neque blandit justo aliquam
+              molestie nunc sapien justo
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h5>6. Can I cancel at anytime?</h5>
+            <p>
+              An enim nullam tempor sapien gravida donec ipsum and enim porta
+              justo integer at velna vitae auctor integer congue undo magna laoreet
+              augue pretium purus pretium ligula
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="cta-wrapper text-center">
+    <div class="cta-pill">
+      Have any questions? 
+      <a href="#">Get in Touch</a>
+    </div>
+  </div>
+
+
+    
+    
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-box text-center">
+        
+        <h2>Give it a try, it's free!</h2>
+        <p class="cta-subtitle">
+          It only takes a few clicks to get started
+        </p>
+
+        <a href="#" class="cta-btn">
+          Get started - it's free
+        </a>
+
+        <p class="cta-note">
+          ✔ Free for 14 days, no credit card required.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+    
+  
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <!-- TOP FOOTER -->
+            <div class="footer-top">
+
+            <!-- LOGO -->
+            <div class="footer-brand">
+                <img src="../img/logo2.png" alt="Martex" class="footer-logo">
+                <span class="brand-name">MARTEX</span>
+            </div>
+
+            <!-- COMPANY -->
+            <div class="footer-col">
+                <h5>Company</h5>
+                <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Our Blog</a></li>
                 <li><a href="#">Contact Us</a></li>
-            </ul>
+                </ul>
             </div>
 
-            <!-- Product -->
+            <!-- PRODUCT -->
             <div class="footer-col">
-            <h4>Product</h4>
-            <ul>
+                <h5>Product</h5>
+                <ul>
                 <li><a href="#">Integration</a></li>
                 <li><a href="#">Customers</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Help Center</a></li>
-            </ul>
+                </ul>
             </div>
 
-            <!-- Legal -->
+            <!-- LEGAL -->
             <div class="footer-col">
-            <h4>Legal</h4>
-            <ul>
+                <h5>Legal</h5>
+                <ul>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Cookie Policy</a></li>
                 <li><a href="#">Site Map</a></li>
-            </ul>
+                </ul>
             </div>
 
-            <!-- Connect -->
+            <!-- CONNECT -->
             <div class="footer-col">
-            <h4>Connect With Us</h4>
-            <a href="mailto:hello@yourdomain.com" class="footer-email">
-                hello@yourdomain.com
-            </a>
-
-            <div class="footer-social">
-                <a href="#">F</a>
-                <a href="#">T</a>
-                <a href="#">G</a>
-                <a href="#">B</a>
-            </div>
+                <h5>Connect With Us</h5>
+                <p class="footer-email">hello@yourdomain.com</p>
+                <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-basketball-ball"></i></a>
+                </div>
             </div>
 
-        </div>
+            </div>
 
-        <div class="footer-divider"></div>
+            <hr>
 
-        <div class="footer-bottom">
+            <!-- BOTTOM FOOTER -->
+            <div class="footer-bottom">
             <p>© 2025 Martex. All Rights Reserved</p>
             <p>Made with ❤️ by @elite-themes24</p>
-        </div>
+            </div>
 
+        </div>
     </footer>
 
 
 
 
 
+  <!-- Bootstrap JS -->
 
-    <script>
-        const animateItems = document.querySelectorAll('.animate-up');
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            }
-            });
-        }, { threshold: 0.2 });
-
-        animateItems.forEach(item => observer.observe(item));
-    </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".custom-navbar");
+      if (window.scrollY > 80) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
 
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const animatedSections = document.querySelectorAll('.animate-2col');
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    animatedSections.forEach(section => observer.observe(section));
+  </script>
+
+  <script>
+    const animateUpSections = document.querySelectorAll('.animate-up');
+
+    const observerUp = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      },
+      { threshold: 0.25 }
+    );
+
+    animateUpSections.forEach(section => observerUp.observe(section));
+  </script>
+
+
+
+  
+
 </body>
 </html>
